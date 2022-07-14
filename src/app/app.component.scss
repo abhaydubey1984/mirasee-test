@@ -120,9 +120,9 @@ header {
         }
 
         p {
-            font-weight: 500;
+            font-weight: 400;
             font-size: 18px;
-            line-height: 175%;
+            line-height: 155%;
             color: #02122D;
             margin-top: 16px;
         }
@@ -158,6 +158,9 @@ header {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        position: sticky;
+        top: 16px;
+        z-index: 1;
 
         .action-box-wrap {
             background: radial-gradient(107.46% 103.99% at 23.32% 18.06%, #0089BD 0%, #013EA6 100%), #003DA6;
@@ -244,6 +247,86 @@ header {
     }
 }
 
+.testimonial-section {
+    padding: 100px 0;
+
+    .carousel {
+        .carousel-indicators {
+            bottom: -100px;
+
+            button {
+                min-width: 8px;
+                width: 8px;
+                height: 8px;
+                min-height: 8px;
+                border-radius: 50%;
+                background: #809ED2;
+                opacity: 0.4;
+                padding: 0;
+                border: none;
+
+                &.active {
+                    background: #003DA6;
+                    opacity: 1;
+                }
+            }
+        }
+
+        .quotes-wrap {
+            font-weight: 500;
+            font-size: 19px;
+            line-height: 175%;
+            color: #02122D;
+            width: 72%;
+            margin: 0 auto 40px;
+            text-align: center;
+        }
+
+        .quotes-head {
+            color: #003DA6;
+            text-align: center;
+        }
+    }
+
+    .item-avatar-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .item-avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-right: 24px;
+
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            h5 {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 175%;
+                color: #02122D;
+                margin-bottom: 0;
+            }
+
+            h6 {
+                color: #7e8895;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 160%;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
 
 footer {
     .footer-bottom-section {
